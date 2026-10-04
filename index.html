@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="phones.css">
 </head>
 <body>
   <header class="site-header">
@@ -23,8 +24,10 @@
         <a href="#about">О мастере</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a class="header-phone" href="tel:+79996555635">+7 (999) 655-56-35 MAX</a>
-      <a class="header-phone" href="tel:+79530950635">+7 (953) 095-06-35 Whatsapp</a>
+      <div class="header-phones" aria-label="Телефоны">
+        <a class="header-phone" href="tel:+79996555635"><span class="phone-number">+7 (999) 655-56-35</span><span class="phone-label">MAX</span></a>
+        <a class="header-phone" href="tel:+79530950635"><span class="phone-number">+7 (953) 095-06-35</span><span class="phone-label">WhatsApp</span></a>
+      </div>
       <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
@@ -95,8 +98,13 @@
     <section class="contact section" id="contacts">
       <div class="container contact-box">
         <div><p class="eyebrow">Нужен электрик?</p><h2>Опишите задачу —<br><em>я свяжусь с вами</em></h2><p>Напишите в WhatsApp, чтобы обсудить детали и договориться о выезде.</p></div>
-        <div class="contact-actions"><a class="button button-green" href="https://api.whatsapp.com/send?phone=79530950635&amp;text=Здравствуйте%2C%20Виталий!%20Хочу%20заказать%20электромонтажные%20работы." target="_blank" rel="noopener"><span class="wa-icon">◉</span> Связаться в WhatsApp</a><a class="contact-tel" href="tel:+79996555635">+7 (999) 655-56-35 MAX</a></div>
-        <div class="header-phone" href="tel:+79530950635">+7 (953) 095-06-35 Whatsapp</a></div>
+        <div class="contact-actions">
+          <a class="button button-green" href="https://api.whatsapp.com/send?phone=79530950635&amp;text=Здравствуйте%2C%20Виталий!%20Хочу%20заказать%20электромонтажные%20работы." target="_blank" rel="noopener"><span class="wa-icon">◉</span> Связаться в WhatsApp</a>
+          <div class="contact-phones" aria-label="Позвонить">
+            <a class="contact-tel" href="tel:+79996555635"><span class="phone-number">+7 (999) 655-56-35</span><span class="phone-label">MAX</span></a>
+            <a class="contact-tel" href="tel:+79530950635"><span class="phone-number">+7 (953) 095-06-35</span><span class="phone-label">WhatsApp</span></a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
